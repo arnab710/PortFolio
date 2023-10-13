@@ -1,0 +1,26 @@
+.typeWriterPara {
+	text-align: left;
+	font-size: 1.05rem;
+	font-weight: 500;
+}
+
+@media screen and (min-width: 464px) {
+	.typeWriterPara {
+		font-size: 1.3rem;
+	}
+}
+@media screen and (min-width: 640px) {
+	.typeWriterPara {
+		font-size: 1rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	.typeWriterPara {
+		font-size: 1.25rem;
+	}
+}
+@media screen and (min-width: 925px) {
+	.typeWriterPara {
+		font-size: 1.5rem;
+	}
+}

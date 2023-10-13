@@ -4,9 +4,10 @@ import React from "react";
 
 const Home: React.FC = () => {
 	return (
-		<main className="h-[300vh]">
+		<main className="">
 			<Navbar />
 			<HeroSection />
+			<div style={{ height: `300vh` }}></div>
 		</main>
 	);
 };

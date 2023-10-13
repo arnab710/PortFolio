@@ -10,19 +10,29 @@ const ParticleContainer: React.FC = () => {
 		await loadFull(engine);
 	}, []);
 
-	const particlesLoaded = useCallback(async (container: Container | undefined) => {
-		await console.log(container);
-	}, []);
+	const particlesLoaded = useCallback(async (container: Container | undefined) => {}, []);
 
 	return (
 		<Particles
 			id="tsparticles"
 			init={customInit}
 			loaded={particlesLoaded}
+			style={{
+				position: "absolute",
+				top: 0,
+				left: 0,
+				width: "100%",
+				minHeight: "130vh",
+				zIndex: -1,
+			}}
 			options={{
+				fullScreen: {
+					enable: false,
+					zIndex: -1,
+				},
 				particles: {
 					number: {
-						value: 20,
+						value: 13,
 						density: {
 							enable: false,
 							value_area: 480,
@@ -75,7 +85,7 @@ const ParticleContainer: React.FC = () => {
 					},
 					move: {
 						enable: true,
-						speed: 0.3,
+						speed: 0.25,
 						direction: "top",
 						random: true,
 						straight: true,

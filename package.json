@@ -15,6 +15,7 @@
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-simple-typewriter": "^5.0.1",
     "react-tsparticles": "^2.12.2",
     "tsparticles": "^2.12.0"
   },
