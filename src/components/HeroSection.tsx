@@ -8,8 +8,8 @@ import AnimatedHeader from "@/utils/AnimatedHeader";
 
 const HeroSection: React.FC = () => {
 	return (
-		<section className="px-10 text-white sm:flex sm:items-center sm:justify-between sm:gap-2 lg:justify-evenly xl:mx-auto xl:max-w-[1280px]">
-			<div className="flex min-h-[100vh] min-w-full items-center sm:mt-[0] sm:min-w-0 sm:max-w-[60%] sm:pl-2">
+		<section className="px-10 text-white sm:flex sm:items-center sm:justify-between lg:justify-evenly xl:mx-auto xl:max-w-[1280px]">
+			<div className="flex min-h-screen min-w-full items-center sm:mt-[0] sm:min-w-0 sm:max-w-[60%] sm:pl-2">
 				<div className="flex flex-col gap-y-4">
 					<h1 className="text-left text-3xl min-[465px]:text-4xl sm:text-3xl md:text-4xl min-[925px]:text-5xl">
 						Hey there! <span className="inline-block origin-[70%_70%] animate-wave">👋</span>
@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
 				</div>
 			</div>
 			<ParticleContainer />
-			<div className="flex min-h-[90vh] min-w-full flex-col items-center justify-between sm:min-h-screen sm:min-w-0 sm:max-w-[40%] sm:flex-none sm:justify-center ">
+			<div className="flex min-h-[90vh] min-w-full flex-col items-center justify-between sm:min-h-screen sm:min-w-0 sm:max-w-[40%] sm:justify-center">
 				<AnimatedHeader />
 				<Image alt="my-picture" src={myImagePath} style={{ maxWidth: `100%`, height: `auto` }} priority />
 			</div>
