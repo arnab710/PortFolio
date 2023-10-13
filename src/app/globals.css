@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 html {
-	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 }
 * {
@@ -17,4 +16,10 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+}
+
+@layer components {
+	.liStyle {
+		@apply flex cursor-pointer items-center gap-1 transition-colors hover:text-blue-400;
+	}
 }

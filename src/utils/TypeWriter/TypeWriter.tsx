@@ -8,7 +8,7 @@ const TypeWriterComponent: React.FC = () => {
 	return (
 		<p className={style.typeWriterPara}>
 			<span>- </span>
-			<Typewriter words={["a Full Stack Web Developer", "a Freelancer", "an Open Source Contributor", "a Lifelong Learner"]} loop={false} cursor typeSpeed={40} deleteSpeed={50} delaySpeed={1500} />
+			<Typewriter words={["A Full Stack Web Developer", "A Freelancer", "An Open Source Contributor", "A Lifelong Learner"]} loop={false} cursor typeSpeed={40} deleteSpeed={50} delaySpeed={1500} />
 		</p>
 	);
 };

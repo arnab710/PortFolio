@@ -4,7 +4,7 @@ import React from "react";
 
 const Home: React.FC = () => {
 	return (
-		<main className="">
+		<main>
 			<Navbar />
 			<HeroSection />
 			<div style={{ height: `300vh` }}></div>
