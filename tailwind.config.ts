@@ -25,10 +25,43 @@ const config: Config = {
 						transform: `translateY(0)`,
 					},
 				},
+				headAnimation2: {
+					"0%": {
+						opacity: "0",
+						transform: `translateY(80px)`,
+					},
+					"100%": {
+						opacity: "1",
+						transform: `translateY(0)`,
+					},
+				},
+				leftAnimation: {
+					"0%": {
+						opacity: "0",
+						transform: `translateX(-100px)`,
+					},
+					"100%": {
+						opacity: "1",
+						transform: `translateX(0)`,
+					},
+				},
+				rightAnimation: {
+					"0%": {
+						opacity: "0",
+						transform: `translateX(100px)`,
+					},
+					"100%": {
+						opacity: "1",
+						transform: `translateX(0)`,
+					},
+				},
 			},
 			animation: {
 				wave: "waveAnimation 2.5s infinite",
 				headAnimation: "headAnimation 1.3s ease-in-out forwards",
+				headAnimation2: "headAnimation2 1s ease-in-out forwards",
+				leftAnimation: "leftAnimation 1.2s ease-in-out forwards",
+				rightAnimation: "rightAnimation 1.2s ease-in-out forwards",
 			},
 		},
 	},
