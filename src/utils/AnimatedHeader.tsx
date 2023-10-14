@@ -10,7 +10,7 @@ const AnimatedHeader: React.FC = () => {
 
 	return (
 		<h1 ref={hRef} className={`text-center text-[1.3rem] opacity-0 sm:hidden ${isVisible && `animate-headAnimation`}`}>
-			Let&apos;s Build Something <span className="text-2xl font-bold text-blue-400">Amazing</span> Together! 👷‍♂️
+			Let&apos;s Build Something <span className="animated-underline text-2xl font-bold text-blue-400">Amazing</span> Together! 👷‍♂️
 		</h1>
 	);
 };

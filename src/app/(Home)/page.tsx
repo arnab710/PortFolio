@@ -6,7 +6,7 @@ import React from "react";
 
 const Home: React.FC = () => {
 	return (
-		<main className="overflow-y-hidden">
+		<main>
 			<Navbar />
 			<HeroSection />
 			<AboutMe />

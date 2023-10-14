@@ -16,10 +16,48 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 @layer components {
 	.liStyle {
 		@apply flex cursor-pointer items-center gap-1 transition-colors hover:text-blue-400;
+	}
+}
+@layer utilities {
+	.animated-underline {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.animated-underline::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -2px; /* Adjust based on your text size */
+		height: 3px;
+		width: 0;
+		background-color: rgb(96 165 250 / var(--tw-text-opacity));
+		animation: underlineSweep 3s infinite linear;
+	}
+
+	@keyframes underlineSweep {
+		0%,
+		100% {
+			left: 0;
+			width: 0;
+		}
+		45% {
+			left: 0;
+			width: 100%;
+		}
+		55% {
+			left: 100%;
+			width: 0;
+		}
+		90% {
+			left: 0;
+			width: 0;
+		}
 	}
 }
