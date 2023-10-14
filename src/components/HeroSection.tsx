@@ -8,7 +8,7 @@ import AnimatedHeader from "@/utils/AnimatedHeader";
 
 const HeroSection: React.FC = () => {
 	return (
-		<section className="px-10 sm:flex sm:items-center sm:justify-between lg:justify-evenly xl:mx-auto xl:max-w-[1280px]">
+		<section id="Hero" className="px-10 sm:flex sm:items-center sm:justify-between lg:justify-evenly xl:mx-auto xl:max-w-[1280px]">
 			<div className="flex min-h-screen min-w-full items-center sm:mt-[0] sm:min-w-0 sm:max-w-[60%] sm:pl-2">
 				<div className="flex flex-col gap-y-4">
 					<h1 className="text-left text-3xl min-[465px]:text-4xl sm:text-3xl md:text-4xl min-[925px]:text-5xl">

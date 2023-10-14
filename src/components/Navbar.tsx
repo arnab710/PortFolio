@@ -5,6 +5,7 @@ import { CgWebsite } from "react-icons/cg";
 import { AiOutlineHome, AiOutlineUser, AiOutlineFileDone } from "react-icons/ai";
 import { FaUserClock } from "react-icons/fa";
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
 	const [openHamBurgerList, setOpenHamBurgerList] = useState<boolean>(false);
@@ -65,11 +66,11 @@ const Navbar = () => {
 					</li>
 					<li className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400">
 						<CgWebsite />
-						<span>Projects</span>
+						<span>Expertise</span>
 					</li>
-					<li className="flex min-h-[70px] items-center justify-center border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400">
+					<li className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400">
 						<AiOutlineFileDone />
-						<span>Resume</span>
+						<span>Projects</span>
 					</li>
 					<li className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400">
 						<FaUserClock />
@@ -78,26 +79,26 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<ul className="mr-3 hidden gap-[4rem] text-lg font-[400] min-[884px]:flex min-[884px]:justify-evenly">
-				<li className="liStyle">
+				<Link to="Hero" spy={true} smooth={true} duration={1000} className="liStyle">
 					<AiOutlineHome />
 					<span>Home</span>
-				</li>
-				<li className="liStyle">
+				</Link>
+				<Link to="AboutMe" spy={true} smooth={true} offset={-40} duration={1000} className="liStyle">
 					<AiOutlineUser />
 					<span>About Me</span>
-				</li>
-				<li className="liStyle">
+				</Link>
+				<Link to="skill" spy={true} smooth={true} offset={-120} duration={1000} className="liStyle">
 					<CgWebsite />
-					<span>Projects</span>
-				</li>
-				<li className="liStyle">
+					<span>Expertise</span>
+				</Link>
+				<Link to="AboutMe" spy={true} smooth={true} offset={-40} duration={1000} className="liStyle">
 					<AiOutlineFileDone />
-					<span>Resume</span>
-				</li>
-				<li className="liStyle">
+					<span>Projects</span>
+				</Link>
+				<Link to="AboutMe" spy={true} smooth={true} offset={-40} duration={1000} className="liStyle">
 					<FaUserClock />
 					<span>Hire Me</span>
-				</li>
+				</Link>
 			</ul>
 		</nav>
 	);

@@ -4,7 +4,7 @@ import React from "react";
 
 const AboutMe: React.FC = () => {
 	return (
-		<section className="m-auto mt-10 overflow-y-hidden bg-black px-10 lg:max-w-[1024px]">
+		<section id="AboutMe" className="m-auto mt-10 min-h-max overflow-y-hidden px-10 lg:max-w-[1024px]">
 			<div className="mt-10 py-12">
 				<AnimatedSectionHeader firstTitle="About" lastTitle="Me" />
 			</div>

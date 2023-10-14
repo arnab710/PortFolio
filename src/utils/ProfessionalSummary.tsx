@@ -13,7 +13,7 @@ const ProfessionalSummary: React.FC = () => {
 	const isVisible3 = useIntersectionObserver(articleRef3, { threshold: 0.1 });
 
 	return (
-		<>
+		<section className="overflow-x-hidden">
 			<article ref={articleRef1} className={`mt-12 opacity-0 ${isVisible1 && `animate-leftAnimation`}`}>
 				<h1 className="text-left text-xl font-semibold">
 					<span className="animated-underline text-blue-400">Professional</span> Summary📝
@@ -41,7 +41,7 @@ const ProfessionalSummary: React.FC = () => {
 					Outside of work, I enjoy playing cricket and am a dedicated guitarist, reaffirming my belief in the importance of work-life balance and continuous learning.
 				</p>
 			</article>
-		</>
+		</section>
 	);
 };
 
