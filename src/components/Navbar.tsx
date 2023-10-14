@@ -42,7 +42,7 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<nav className={`fixed left-0 top-0 z-50 flex min-h-[100px] w-full items-center justify-between  ${scrolled ? `backdrop-blur-md` : `bg-transparent`} px-4 text-center text-white`}>
+		<nav className={`fixed left-0 top-0 z-50 flex min-h-[100px] w-full items-center justify-between  ${scrolled ? `backdrop-blur-md` : `bg-transparent`} px-4 text-center`}>
 			<div className="border-2 p-1 font-bold tracking-wide text-blue-400">AD.</div>
 			<div className="group">
 				<span

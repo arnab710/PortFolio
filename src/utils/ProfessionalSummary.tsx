@@ -14,7 +14,7 @@ const ProfessionalSummary: React.FC = () => {
 
 	return (
 		<>
-			<article ref={articleRef1} className={`mt-12 text-white opacity-0 ${isVisible1 && `animate-leftAnimation`}`}>
+			<article ref={articleRef1} className={`mt-12 opacity-0 ${isVisible1 && `animate-leftAnimation`}`}>
 				<h1 className="text-left text-xl font-semibold">
 					<span className="text-blue-400">Professional</span> Summary📝
 				</h1>
@@ -24,7 +24,7 @@ const ProfessionalSummary: React.FC = () => {
 				</p>
 			</article>
 
-			<article ref={articleRef2} className={`mt-12 text-white opacity-0 ${isVisible2 && `animate-rightAnimation`}`}>
+			<article ref={articleRef2} className={`mt-12 opacity-0 ${isVisible2 && `animate-rightAnimation`}`}>
 				<h1 className="text-left text-xl font-semibold">
 					<span className="text-blue-400">Problem</span> Solving 🧩
 				</h1>
@@ -33,7 +33,7 @@ const ProfessionalSummary: React.FC = () => {
 				</p>
 			</article>
 
-			<article ref={articleRef3} className={`mt-12 text-white opacity-0 ${isVisible3 && `animate-leftAnimation`}`}>
+			<article ref={articleRef3} className={`mt-12 opacity-0 ${isVisible3 && `animate-leftAnimation`}`}>
 				<h1 className="text-left text-xl font-semibold">
 					<span className="text-blue-400">Personal</span> Interests 🎸
 				</h1>
