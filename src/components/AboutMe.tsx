@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
 			<p className="text-center text-white md:text-xl">Full-Stack MERN Developer Specializing in React, Next.js, and Scalable Backend Solutions, Committed to Crafting High-Quality Web Experiences</p>
 			<ProfessionalSummary />
 			<SkillProgress />
-			<div style={{ height: `100vh` }}></div>
+			<div style={{ height: `200vh` }}></div>
 		</section>
 	);
 };
