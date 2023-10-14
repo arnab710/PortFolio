@@ -1,5 +1,6 @@
 import AboutMeHeader from "@/utils/AboutMeHeader";
 import ProfessionalSummary from "@/utils/ProfessionalSummary";
+import SkillProgress from "@/utils/ProgressBar";
 import React from "react";
 
 const AboutMe: React.FC = () => {
@@ -8,8 +9,10 @@ const AboutMe: React.FC = () => {
 			<div className="mt-10 py-12">
 				<AboutMeHeader />
 			</div>
-			<p className="text-center text-white md:text-xl">Full-Stack Developer & Recent B.Tech Graduate in Electronics and Communication Engineering</p>
+			<p className="text-center text-white md:text-xl">Full-Stack MERN Developer Specializing in React, Next.js, and Scalable Backend Solutions, Committed to Crafting High-Quality Web Experiences</p>
 			<ProfessionalSummary />
+			<SkillProgress />
+			<div style={{ height: `100vh` }}></div>
 		</section>
 	);
 };
