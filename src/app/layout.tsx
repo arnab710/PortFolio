@@ -23,9 +23,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en" className="scroll-p-6">
-			<body className={`${poppins.className} relative text-white`}>
-				<Image src={bg} alt="my-background" style={{ position: `fixed`, top: 0, left: 0, width: `100vw`, height: `100vh`, zIndex: -99 }} />
+		<html lang="en" className="relative">
+			<body className={`${poppins.className} w-[full] overflow-x-hidden  bg-black text-white`}>
+				<Image src={bg} priority alt="my-background" style={{ position: `fixed`, top: 0, left: 0, width: `100vw`, height: `100vh`, zIndex: -99 }} />
 				{children}
 				<Toaster
 					position="bottom-center"
