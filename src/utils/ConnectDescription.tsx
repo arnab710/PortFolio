@@ -20,7 +20,7 @@ const ConnectDescription: React.FC = () => {
 	const isVisible4 = useIntersectionObserver(divRef4, { threshold: 0 });
 
 	return (
-		<section className="m-auto mt-24 overflow-x-hidden lg:max-w-[1024px]">
+		<section className="m-auto mt-24 overflow-hidden lg:max-w-[1024px]">
 			<h1 className="w-max text-3xl font-semibold text-blue-400 underline underline-offset-4">Connect</h1>
 			<div ref={divRef1} style={{ marginTop: `50px` }} className={`opacity-0 ${isVisible1 && `animate-leftAnimation`}`}>
 				<Image src={Connect1} alt="Connect Website Img" style={{ width: `100%` }} />
