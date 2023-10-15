@@ -60,7 +60,6 @@ const Navbar = () => {
 						to="Hero"
 						spy={true}
 						activeClass="text-blue-400"
-						smooth={true}
 						duration={1500}
 						aria-label="hello"
 						href="#"
@@ -108,16 +107,7 @@ const Navbar = () => {
 						<AiOutlineFileDone />
 						<span>Projects</span>
 					</ScrollLinksss>
-					<ScrollLinksss
-						to="Contact"
-						spy={true}
-						smooth={true}
-						activeClass="text-blue-400"
-						offset={-100}
-						duration={1500}
-						href="#"
-						className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400"
-					>
+					<ScrollLinksss to="Contact" spy={true} activeClass="text-blue-400" duration={1500} href="#" className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400">
 						<FaUserClock />
 						<span>Hire Me</span>
 					</ScrollLinksss>
