@@ -4,6 +4,7 @@ import React, { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import style from "./ParticleContainer.module.css";
 
 const ParticleContainer: React.FC = () => {
 	const customInit = useCallback(async (engine: Engine) => {
@@ -17,9 +18,10 @@ const ParticleContainer: React.FC = () => {
 			id="tsparticles"
 			init={customInit}
 			loaded={particlesLoaded}
+			className={style.particleContainer}
 			options={{
 				fullScreen: {
-					enable: true,
+					enable: false,
 					zIndex: -1,
 				},
 				particles: {
