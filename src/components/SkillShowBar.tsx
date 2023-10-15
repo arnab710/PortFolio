@@ -14,7 +14,7 @@ const SkillShowBar: React.FC<{ skillType: string }> = ({ skillType }) => {
 	else skillObj = skillsObjOthers;
 
 	return (
-		<ul>
+		<section>
 			{skillObj &&
 				skillObj.map((skill) => (
 					<article key={skill.skillName} className="mt-8">
@@ -29,7 +29,7 @@ const SkillShowBar: React.FC<{ skillType: string }> = ({ skillType }) => {
 						<SkillProgress skillVal={skill.skillVal} />
 					</article>
 				))}
-		</ul>
+		</section>
 	);
 };
 

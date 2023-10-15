@@ -5,7 +5,7 @@ import { CgWebsite } from "react-icons/cg";
 import { AiOutlineHome, AiOutlineUser, AiOutlineFileDone } from "react-icons/ai";
 import { FaUserClock } from "react-icons/fa";
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLinksss } from "react-scroll";
 
 const Navbar = () => {
 	const [openHamBurgerList, setOpenHamBurgerList] = useState<boolean>(false);
@@ -15,10 +15,13 @@ const Navbar = () => {
 		function handleClickOutside(event: Event) {
 			setOpenHamBurgerList(false);
 		}
-		document.addEventListener("click", handleClickOutside, true);
+		function namedClickListener(event: Event) {
+			handleClickOutside(event);
+		}
+		document.addEventListener("click", namedClickListener, true);
 
 		return () => {
-			document.removeEventListener("click", handleClickOutside, true);
+			document.removeEventListener("click", namedClickListener, true);
 		};
 	}, []);
 
@@ -52,82 +55,96 @@ const Navbar = () => {
 				>
 					<GiHamburgerMenu />
 				</span>
-				<ul ref={hamburgerRef} className={`absolute  top-[70px] z-20 flex w-screen flex-col bg-black transition-all delay-0 duration-300 ${openHamBurgerList ? `left-0` : `left-[-100vw]`}`}>
-					<Link
+				<section ref={hamburgerRef} className={`absolute  top-[70px] z-20 flex w-screen flex-col bg-black transition-all delay-0 duration-300 ${openHamBurgerList ? `left-0` : `left-[-100vw]`}`}>
+					<ScrollLinksss
 						to="Hero"
 						spy={true}
 						activeClass="text-blue-400"
 						smooth={true}
 						duration={1500}
+						aria-label="hello"
+						href="#"
 						className=" flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<AiOutlineHome />
 						<span>Home</span>
-					</Link>
-					<Link
+					</ScrollLinksss>
+					<ScrollLinksss
 						to="AboutMe"
 						spy={true}
 						activeClass="text-blue-400"
 						smooth={true}
 						offset={-80}
 						duration={1500}
+						href="#"
 						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<AiOutlineUser />
 						<span>About Me</span>
-					</Link>
-					<Link
+					</ScrollLinksss>
+					<ScrollLinksss
 						to="skill"
 						spy={true}
 						smooth={true}
 						activeClass="text-blue-400"
 						offset={-120}
 						duration={1500}
+						href="#"
 						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<CgWebsite />
 						<span>Expertise</span>
-					</Link>
-					<Link
+					</ScrollLinksss>
+					<ScrollLinksss
 						to="projects"
 						spy={true}
 						smooth={true}
 						activeClass="text-blue-400"
 						offset={-110}
 						duration={1500}
+						href="#"
 						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<AiOutlineFileDone />
 						<span>Projects</span>
-					</Link>
-					<Link to="Contact" spy={true} smooth={true} activeClass="text-blue-400" offset={-100} duration={1500} className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400">
+					</ScrollLinksss>
+					<ScrollLinksss
+						to="Contact"
+						spy={true}
+						smooth={true}
+						activeClass="text-blue-400"
+						offset={-100}
+						duration={1500}
+						href="#"
+						className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400"
+					>
 						<FaUserClock />
 						<span>Hire Me</span>
-					</Link>
-				</ul>
+					</ScrollLinksss>
+				</section>
 			</div>
-			<ul className="mr-3 hidden gap-[4rem] text-lg font-[400] min-[884px]:flex min-[884px]:justify-evenly">
-				<Link to="Hero" spy={true} activeClass="text-blue-400" smooth={true} duration={1500} className="liStyle">
+			<section className="mr-3 hidden gap-[4rem] text-lg font-[400] min-[884px]:flex min-[884px]:justify-evenly">
+				<ScrollLinksss to="Hero" spy={true} href="#" activeClass="text-blue-400" smooth={true} duration={1500} className="liStyle">
 					<AiOutlineHome />
 					<span>Home</span>
-				</Link>
-				<Link to="AboutMe" spy={true} activeClass="text-blue-400" smooth={true} offset={-80} duration={1500} className="liStyle">
+				</ScrollLinksss>
+				<ScrollLinksss to="AboutMe" spy={true} href="#" activeClass="text-blue-400" smooth={true} offset={-80} duration={1500} className="liStyle">
 					<AiOutlineUser />
 					<span>About Me</span>
-				</Link>
-				<Link to="skill" spy={true} smooth={true} activeClass="text-blue-400" offset={-120} duration={1500} className="liStyle">
+				</ScrollLinksss>
+				<ScrollLinksss to="skill" spy={true} href="#" smooth={true} activeClass="text-blue-400" offset={-120} duration={1500} className="liStyle">
 					<CgWebsite />
 					<span>Expertise</span>
-				</Link>
-				<Link to="projects" spy={true} smooth={true} activeClass="text-blue-400" offset={-110} duration={1500} className="liStyle">
+				</ScrollLinksss>
+				<ScrollLinksss to="projects" spy={true} href="#" smooth={true} activeClass="text-blue-400" offset={-110} duration={1500} className="liStyle">
 					<AiOutlineFileDone />
 					<span>Projects</span>
-				</Link>
-				<Link to="Contact" spy={true} smooth={true} activeClass="text-blue-400" offset={-100} duration={1500} className="liStyle">
+				</ScrollLinksss>
+				<ScrollLinksss to="Contact" spy={true} href="#" smooth={true} activeClass="text-blue-400" offset={-100} duration={1500} className="liStyle">
 					<FaUserClock />
 					<span>Hire Me</span>
-				</Link>
-			</ul>
+				</ScrollLinksss>
+			</section>
 		</nav>
 	);
 };

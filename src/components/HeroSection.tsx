@@ -21,21 +21,21 @@ const HeroSection: React.FC = () => {
 					<ul className="mt-4 flex max-w-[80%] justify-between">
 						<li>
 							<a href="https://github.com/arnab710" target="_blank" rel="noopener noreferrer">
-								<AiOutlineGithub className="text-2xl hover:text-blue-400" />
+								<AiOutlineGithub className="text-2xl hover:text-blue-400" aria-label="Navigating to My GitHub profile" />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/arnab.dey710" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.instagram.com/arnab.dey710" target="_blank" rel="noopener noreferrer" aria-label="Navigating to My Instagram profile">
 								<AiOutlineInstagram className="text-2xl hover:text-blue-400" />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.facebook.com/profile.php?id=100008547909444" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.facebook.com/profile.php?id=100008547909444" target="_blank" rel="noopener noreferrer" aria-label="Navigating to My facebook profile">
 								<AiOutlineFacebook className="text-2xl hover:text-blue-400" />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/in/arnab-dey-09398b227" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.linkedin.com/in/arnab-dey-09398b227" target="_blank" rel="noopener noreferrer" aria-label="Navigating to My LinkedIn profile">
 								<AiOutlineLinkedin className="text-2xl hover:text-blue-400" />
 							</a>
 						</li>
