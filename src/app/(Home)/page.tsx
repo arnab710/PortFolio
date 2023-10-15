@@ -1,23 +1,23 @@
-import React from "react";
 import dynamic from "next/dynamic";
+import React from "react";
 
 const Navbar = dynamic(() => import("@/components/Navbar"), {
-	loading: () => <p>Loading</p>,
+	loading: () => <p className="mt-3 p-3 text-center">Loading</p>,
 });
 const HeroSection = dynamic(() => import("@/components/HeroSection"), {
-	loading: () => <p>Loading</p>,
+	loading: () => <p className="mt-3 p-3 text-center">Loading</p>,
 });
 const AboutMe = dynamic(() => import("@/components/AboutMe"), {
-	loading: () => <p>Loading</p>,
+	loading: () => <p className="mt-3 p-3 text-center">Loading</p>,
 });
 const Contact = dynamic(() => import("@/components/Contact"), {
-	loading: () => <p>Loading</p>,
+	loading: () => <p className="mt-3 p-3 text-center">Loading</p>,
 });
 const Projects = dynamic(() => import("@/components/Projects"), {
-	loading: () => <p>Loading</p>,
+	loading: () => <p className="mt-3 p-3 text-center">Loading</p>,
 });
 const Skill = dynamic(() => import("@/components/Skill"), {
-	loading: () => <p>Loading</p>,
+	loading: () => <p className="mt-3 p-3 text-center">Loading</p>,
 });
 const Home: React.FC = () => {
 	return (
