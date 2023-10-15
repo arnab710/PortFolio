@@ -123,19 +123,19 @@ const Navbar = () => {
 					<AiOutlineHome />
 					<span>Home</span>
 				</ScrollLinksss>
-				<ScrollLinksss to="AboutMe" spy={true} href="#" activeClass="text-blue-400" smooth={true} offset={-80} duration={1500} className="liStyle">
+				<ScrollLinksss to="AboutMe" spy={true} activeClass="text-blue-400" smooth={true} offset={-80} duration={1500} className="liStyle">
 					<AiOutlineUser />
 					<span>About Me</span>
 				</ScrollLinksss>
-				<ScrollLinksss to="skill" spy={true} href="#" smooth={true} activeClass="text-blue-400" offset={-120} duration={1500} className="liStyle">
+				<ScrollLinksss to="skill" spy={true} smooth={true} activeClass="text-blue-400" offset={-120} duration={1500} className="liStyle">
 					<CgWebsite />
 					<span>Expertise</span>
 				</ScrollLinksss>
-				<ScrollLinksss to="projects" spy={true} href="#" smooth={true} activeClass="text-blue-400" offset={-110} duration={1500} className="liStyle">
+				<ScrollLinksss to="projects" spy={true} smooth={true} activeClass="text-blue-400" offset={-110} duration={1500} className="liStyle">
 					<AiOutlineFileDone />
 					<span>Projects</span>
 				</ScrollLinksss>
-				<ScrollLinksss to="Contact" spy={true} href="#" smooth={true} activeClass="text-blue-400" offset={-100} duration={1500} className="liStyle">
+				<ScrollLinksss to="Contact" spy={true} smooth={true} activeClass="text-blue-400" offset={-100} duration={1500} className="liStyle">
 					<FaUserClock />
 					<span>Hire Me</span>
 				</ScrollLinksss>

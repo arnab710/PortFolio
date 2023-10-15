@@ -1,6 +1,6 @@
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import React from "react";
-import ParticleContainer from "./ParticleContainer/ParticleContainer";
+// import ParticleContainer from "./ParticleContainer/ParticleContainer";
 import Image from "next/image";
 import myImagePath from "../../public/assets/my-img.png";
 import TypeWriterComponent from "@/utils/TypeWriter/TypeWriter";
@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
 					</ul>
 				</div>
 			</div>
-			<ParticleContainer />
+			{/* <ParticleContainer /> */}
 			<div className="flex min-h-[90vh] min-w-full flex-col items-center justify-between sm:min-h-screen sm:min-w-0 sm:max-w-[40%] sm:justify-center">
 				<AnimatedHeader />
 				<Image alt="my-picture" src={myImagePath} style={{ maxWidth: `100%`, height: `auto`, zIndex: 10 }} priority />
