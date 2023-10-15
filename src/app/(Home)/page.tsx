@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import Contact from "@/components/Contact";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
 			<AboutMe />
 			<Skill />
 			<Projects />
+			<Contact />
 		</main>
 	);
 };

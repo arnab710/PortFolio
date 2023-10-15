@@ -42,7 +42,7 @@ export const skillsObjFrontend = [
 	},
 	{
 		skillName: "Tailwind CSS",
-		skillVal: 80,
+		skillVal: 85,
 		icon: SiTailwindcss,
 		class: "rgb(96 165 250 / var(--tw-text-opacity))",
 	},
@@ -119,12 +119,6 @@ export const skillsObjBackend = [
 		skillVal: 95,
 		class: "",
 	},
-	{
-		skillName: "Postman",
-		skillVal: 90,
-		icon: SiPostman,
-		class: "#FF6C37",
-	},
 ];
 
 export const skillsObjDB = [
@@ -197,6 +191,12 @@ export const skillsObjOthers = [
 		skillVal: 95,
 		icon: SiVisualstudiocode,
 		class: "#007ACC",
+	},
+	{
+		skillName: "Postman",
+		skillVal: 90,
+		icon: SiPostman,
+		class: "#FF6C37",
 	},
 	{
 		skillName: "C++",

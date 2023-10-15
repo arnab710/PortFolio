@@ -61,3 +61,8 @@ body {
 		}
 	}
 }
+@layer components {
+	.formInputStyle {
+		@apply rounded-[10px] bg-transparent p-[15px] border-[1.5px] border-white focus:outline-none autofill:bg-transparent;
+	}
+}

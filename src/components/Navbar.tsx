@@ -58,7 +58,7 @@ const Navbar = () => {
 						spy={true}
 						activeClass="text-blue-400"
 						smooth={true}
-						duration={1000}
+						duration={1500}
 						className=" flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<AiOutlineHome />
@@ -70,7 +70,7 @@ const Navbar = () => {
 						activeClass="text-blue-400"
 						smooth={true}
 						offset={-80}
-						duration={1000}
+						duration={1500}
 						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<AiOutlineUser />
@@ -82,7 +82,7 @@ const Navbar = () => {
 						smooth={true}
 						activeClass="text-blue-400"
 						offset={-120}
-						duration={1000}
+						duration={1500}
 						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<CgWebsite />
@@ -94,36 +94,36 @@ const Navbar = () => {
 						smooth={true}
 						activeClass="text-blue-400"
 						offset={-110}
-						duration={1000}
+						duration={1500}
 						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<AiOutlineFileDone />
 						<span>Projects</span>
 					</Link>
-					<Link to="AboutMe" spy={true} smooth={true} activeClass="text-blue-400" offset={-40} duration={1000} className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400">
+					<Link to="Contact" spy={true} smooth={true} activeClass="text-blue-400" offset={-100} duration={1500} className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400">
 						<FaUserClock />
 						<span>Hire Me</span>
 					</Link>
 				</ul>
 			</div>
 			<ul className="mr-3 hidden gap-[4rem] text-lg font-[400] min-[884px]:flex min-[884px]:justify-evenly">
-				<Link to="Hero" spy={true} activeClass="text-blue-400" smooth={true} duration={1000} className="liStyle">
+				<Link to="Hero" spy={true} activeClass="text-blue-400" smooth={true} duration={1500} className="liStyle">
 					<AiOutlineHome />
 					<span>Home</span>
 				</Link>
-				<Link to="AboutMe" spy={true} activeClass="text-blue-400" smooth={true} offset={-80} duration={1000} className="liStyle">
+				<Link to="AboutMe" spy={true} activeClass="text-blue-400" smooth={true} offset={-80} duration={1500} className="liStyle">
 					<AiOutlineUser />
 					<span>About Me</span>
 				</Link>
-				<Link to="skill" spy={true} smooth={true} activeClass="text-blue-400" offset={-120} duration={1000} className="liStyle">
+				<Link to="skill" spy={true} smooth={true} activeClass="text-blue-400" offset={-120} duration={1500} className="liStyle">
 					<CgWebsite />
 					<span>Expertise</span>
 				</Link>
-				<Link to="projects" spy={true} smooth={true} activeClass="text-blue-400" offset={-110} duration={1000} className="liStyle">
+				<Link to="projects" spy={true} smooth={true} activeClass="text-blue-400" offset={-110} duration={1500} className="liStyle">
 					<AiOutlineFileDone />
 					<span>Projects</span>
 				</Link>
-				<Link to="AboutMe" spy={true} smooth={true} activeClass="text-blue-400" offset={-40} duration={1000} className="liStyle">
+				<Link to="Contact" spy={true} smooth={true} activeClass="text-blue-400" offset={-100} duration={1500} className="liStyle">
 					<FaUserClock />
 					<span>Hire Me</span>
 				</Link>
