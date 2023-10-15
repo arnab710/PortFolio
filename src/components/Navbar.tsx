@@ -63,7 +63,6 @@ const Navbar = () => {
 						smooth={true}
 						duration={1500}
 						aria-label="hello"
-						href="#"
 						className=" flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<AiOutlineHome />
@@ -76,7 +75,6 @@ const Navbar = () => {
 						smooth={true}
 						offset={-80}
 						duration={1500}
-						href="#"
 						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<AiOutlineUser />
@@ -89,7 +87,6 @@ const Navbar = () => {
 						activeClass="text-blue-400"
 						offset={-120}
 						duration={1500}
-						href="#"
 						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<CgWebsite />
@@ -102,7 +99,6 @@ const Navbar = () => {
 						activeClass="text-blue-400"
 						offset={-110}
 						duration={1500}
-						href="#"
 						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
 					>
 						<AiOutlineFileDone />
@@ -115,7 +111,6 @@ const Navbar = () => {
 						activeClass="text-blue-400"
 						offset={-100}
 						duration={1500}
-						href="#"
 						className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400"
 					>
 						<FaUserClock />
