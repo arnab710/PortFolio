@@ -8,7 +8,7 @@ const AnimatedSectionHeader: React.FC<{ firstTitle: string; lastTitle: string }>
 	const isVisible = useIntersectionObserver(headRef, { threshold: 0 });
 
 	return (
-		<h1 ref={headRef} className={`text-center text-4xl font-semibold tracking-wide opacity-0 ${isVisible && `animate-headAnimation2`}`}>
+		<h1 ref={headRef} className={`text-center ${lastTitle === "Projects" ? `text-2xl` : `text-4xl`} font-semibold tracking-wide opacity-0 ${isVisible && `animate-headAnimation2`}`}>
 			{firstTitle} <span className="animated-underline text-blue-400">{lastTitle}</span>
 		</h1>
 	);

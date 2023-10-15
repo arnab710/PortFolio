@@ -1,6 +1,7 @@
 import AboutMe from "@/components/AboutMe";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import Skill from "@/components/Skill";
 import React from "react";
 
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
 			<HeroSection />
 			<AboutMe />
 			<Skill />
+			<Projects />
 		</main>
 	);
 };

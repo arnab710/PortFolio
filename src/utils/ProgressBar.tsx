@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 
 const SkillProgress: React.FC<{ skillVal: number }> = ({ skillVal }) => {
 	const progressref = useRef<HTMLDivElement | null>(null);
-	const isVisible = useIntersectionObserver(progressref, { root: null, rootMargin: `0px`, threshold: 0 });
+	const isVisible = useIntersectionObserver(progressref, { threshold: 0 });
 
 	const val = useProgrssBarIncrease(skillVal, isVisible);
 
