@@ -8,7 +8,7 @@ import Beatzz4 from "../../public/assets/Beatzz4.png";
 import Image from "next/image";
 import useIntersectionObserver from "@/Hooks/useIntersectionObserver";
 
-const EachProject = () => {
+const BeatzzDescription = () => {
 	const divRef1 = useRef<HTMLDivElement | null>(null);
 	const divRef2 = useRef<HTMLDivElement | null>(null);
 	const divRef3 = useRef<HTMLDivElement | null>(null);
@@ -21,7 +21,7 @@ const EachProject = () => {
 
 	return (
 		<section className="m-auto mt-20 overflow-x-hidden lg:max-w-[1024px]">
-			<h1 className="w-max text-3xl font-semibold text-blue-400">Beatzz</h1>
+			<h1 className="w-max text-3xl font-semibold text-blue-400 underline underline-offset-4">Beatzz</h1>
 			<div ref={divRef1} style={{ marginTop: `50px` }} className={`opacity-0 ${isVisible1 && `animate-leftAnimation`}`}>
 				<Image src={Beatzz1} alt="Beatzz Website Img" style={{ width: `100%` }} />
 				<p className="mt-3 text-center text-xs font-semibold min-[478px]:text-base">
@@ -80,6 +80,9 @@ const EachProject = () => {
 						UI/UX.
 					</li>
 					<li className="mt-2">
+						<span className="font-bold text-blue-400">React Query</span> : Efficient and effective API calls for a fluid experience.
+					</li>
+					<li className="mt-2">
 						<span className="font-bold text-blue-400">Intersection Observer API</span> : Immerse yourself in smooth scroll animations, optimized for both performance and aesthetic appeal.
 					</li>
 					<li className="mt-2">
@@ -101,8 +104,20 @@ const EachProject = () => {
 					Frontend
 				</a>
 			</span>
+			<div className="mt-6 text-start text-xs">
+				<p>
+					* Test Account Email : <span className="text-blue-400">arnabdey710@gmail.com</span>
+				</p>
+				<p>
+					* Test Account Password : <span className="text-blue-400">12345678</span>
+				</p>
+				<p className="mt-3 sm:max-w-[80%]">
+					<span className="text-red-400">****</span>(This website uses cookies primarily for authentication. To enjoy a seamless experience, please make sure cookies are enabled in your browser.
+					Without cookies, some functionalities may not work as intended)
+				</p>
+			</div>
 		</section>
 	);
 };
 
-export default EachProject;
+export default BeatzzDescription;

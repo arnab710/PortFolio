@@ -13,14 +13,12 @@ const Navbar = () => {
 
 	useEffect(() => {
 		function handleClickOutside(event: Event) {
-			if (hamburgerRef.current && !hamburgerRef.current.contains(event.target as Node)) {
-				setOpenHamBurgerList(false);
-			}
+			setOpenHamBurgerList(false);
 		}
-		document.addEventListener("click", handleClickOutside);
+		document.addEventListener("click", handleClickOutside, true);
 
 		return () => {
-			document.removeEventListener("click", handleClickOutside);
+			document.removeEventListener("click", handleClickOutside, true);
 		};
 	}, []);
 
@@ -49,33 +47,63 @@ const Navbar = () => {
 				<span
 					className="text-2xl min-[884px]:hidden"
 					onClick={(e) => {
-						e.nativeEvent.stopImmediatePropagation();
 						setOpenHamBurgerList((state) => !state);
 					}}
 				>
 					<GiHamburgerMenu />
 				</span>
 				<ul ref={hamburgerRef} className={`absolute  top-[70px] z-20 flex w-screen flex-col bg-black transition-all delay-0 duration-300 ${openHamBurgerList ? `left-0` : `left-[-100vw]`}`}>
-					<li className=" flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400">
+					<Link
+						to="Hero"
+						spy={true}
+						activeClass="text-blue-400"
+						smooth={true}
+						duration={1000}
+						className=" flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
+					>
 						<AiOutlineHome />
 						<span>Home</span>
-					</li>
-					<li className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400">
+					</Link>
+					<Link
+						to="AboutMe"
+						spy={true}
+						activeClass="text-blue-400"
+						smooth={true}
+						offset={-80}
+						duration={1000}
+						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
+					>
 						<AiOutlineUser />
 						<span>About Me</span>
-					</li>
-					<li className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400">
+					</Link>
+					<Link
+						to="skill"
+						spy={true}
+						smooth={true}
+						activeClass="text-blue-400"
+						offset={-120}
+						duration={1000}
+						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
+					>
 						<CgWebsite />
 						<span>Expertise</span>
-					</li>
-					<li className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400">
+					</Link>
+					<Link
+						to="projects"
+						spy={true}
+						smooth={true}
+						activeClass="text-blue-400"
+						offset={-110}
+						duration={1000}
+						className="flex min-h-[70px] items-center justify-center gap-2 border-b-[0.1px] border-dashed border-gray-400 hover:text-blue-400"
+					>
 						<AiOutlineFileDone />
 						<span>Projects</span>
-					</li>
-					<li className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400">
+					</Link>
+					<Link to="AboutMe" spy={true} smooth={true} activeClass="text-blue-400" offset={-40} duration={1000} className="flex min-h-[70px] items-center justify-center gap-2 hover:text-blue-400">
 						<FaUserClock />
 						<span>Hire Me</span>
-					</li>
+					</Link>
 				</ul>
 			</div>
 			<ul className="mr-3 hidden gap-[4rem] text-lg font-[400] min-[884px]:flex min-[884px]:justify-evenly">
