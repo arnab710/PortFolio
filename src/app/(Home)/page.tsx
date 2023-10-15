@@ -15,6 +15,7 @@ const Home: React.FC = () => {
 			<Skill />
 			<Projects />
 			<Contact />
+			<h1 className="mt-3 bg-black p-3 text-center">Designed By @Arnab Dey</h1>
 		</main>
 	);
 };

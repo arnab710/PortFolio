@@ -115,7 +115,7 @@ const config: Config = {
 			},
 			animation: {
 				wave: "waveAnimation 2.5s infinite",
-				headAnimation: "headAnimation 1.3s ease-in-out forwards",
+				headAnimation: "headAnimation 1.1s ease-in-out forwards",
 				headAnimation2: "headAnimation2 1s ease-in-out forwards",
 				leftAnimation: "leftAnimation 1.2s ease-in-out forwards",
 				rightAnimation: "rightAnimation 1.2s ease-in-out forwards",
