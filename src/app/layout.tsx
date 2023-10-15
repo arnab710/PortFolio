@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
 	metadataBase: new URL(process.env.NEXT_PUBLIC_URL as string),
-	title: "Arnab Dey's PortFolio",
+	title: "Arnab Dey | Web Dev PortFolio",
 	description: "Meet Arnab Dey,a Full Stack Web Developer, Proficient in a wide range of technologies including React.js, Node, MongoDB, Next.js, Tailwind CSS,Express.js and more.",
 	openGraph: {
 		title: "Arnab Dey's PortFolio",
