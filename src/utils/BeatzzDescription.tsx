@@ -106,7 +106,7 @@ const BeatzzDescription = () => {
 			</span>
 			<div className="mt-6 text-start text-xs">
 				<p>
-					* Test Account Email : <span className="text-blue-400">arnabdey710@gmail.com</span>
+					* Test Account Email : <span className="text-blue-400">arnab@gmail.com</span>
 				</p>
 				<p>
 					* Test Account Password : <span className="text-blue-400">12345678</span>
