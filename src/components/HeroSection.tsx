@@ -1,4 +1,5 @@
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
+import { BiLogoUpwork } from "react-icons/bi";
 import React from "react";
 import ParticleContainer from "./ParticleContainer/ParticleContainer";
 import Image from "next/image";
@@ -30,8 +31,8 @@ const HeroSection: React.FC = () => {
 							</a>
 						</li>
 						<li>
-							<a href="https://www.facebook.com/profile.php?id=100008547909444" target="_blank" rel="noopener noreferrer" aria-label="Navigating to My facebook profile">
-								<AiOutlineFacebook className="text-2xl hover:text-blue-400" />
+							<a href="https://www.upwork.com/freelancers/~01744fe08829ded13d" target="_blank" rel="noopener noreferrer" aria-label="Navigating to My Upwork profile">
+								<BiLogoUpwork className="text-2xl hover:text-blue-400" />
 							</a>
 						</li>
 						<li>
