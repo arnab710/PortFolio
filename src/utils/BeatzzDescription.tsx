@@ -97,10 +97,10 @@ const BeatzzDescription = () => {
 				<a href="https://beatzzz.netlify.app" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
 					See Live
 				</a>
-				<a href="https://github.com/arnab710/Beatzz" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
+				<a href="https://github.com/arnab710/Beatzz-Backend" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
 					Backend
 				</a>
-				<a href="https://github.com/arnab710/Beatzz-FrontEnd/tree/main/vite-project" target="_blank" rel="noopener noreferrer" className="relative animate-pulse text-red-500">
+				<a href="https://github.com/arnab710/Beatzz-Frontend" target="_blank" rel="noopener noreferrer" className="relative animate-pulse text-red-500">
 					Frontend
 				</a>
 			</span>
