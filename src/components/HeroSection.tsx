@@ -1,4 +1,4 @@
-import { AiOutlineGithub, AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 import { BiLogoUpwork } from "react-icons/bi";
 import React from "react";
 import ParticleContainer from "./ParticleContainer/ParticleContainer";
