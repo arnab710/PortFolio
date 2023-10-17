@@ -65,6 +65,10 @@ const ConnectDescription: React.FC = () => {
 						<span className="font-bold text-blue-400">Backend</span> : Leverage the scalability and performance of Node and Express APIs.
 					</li>
 					<li className="mt-2">
+						<span className="font-bold text-blue-400">Cloudinary Secure Uploads</span> : Enhanced media security by integrating Cloudinary&apos;s signature-based authentication, streamlining safe and
+						efficient file uploads directly from the client-side.
+					</li>
+					<li className="mt-2">
 						<span className="font-bold text-blue-400">Redis</span> : Employ advanced cache validation to make your feed load faster than ever. database handling that offers speed, scalability, and a
 						no-compromise attitude towards data integrity.
 					</li>
@@ -87,6 +91,10 @@ const ConnectDescription: React.FC = () => {
 				<ul className="mt-4 list-disc text-sm">
 					<li>
 						<span className="font-bold text-blue-400">TypeScript and React</span> : Unmatched UI/UX built on the solid foundation of TypeScript and React.
+					</li>
+					<li className="mt-2">
+						<span className="font-bold text-blue-400">Frontend Cloudinary Integration</span> : Enhanced media upload efficiency by integrating Cloudinary&apos;s API for direct, secure, and fast
+						client-side handling, reducing server load and preserving media quality.
 					</li>
 					<li className="mt-2">
 						<span className="font-bold text-blue-400">React Query</span> : Efficient and effective API calls for a fluid experience.

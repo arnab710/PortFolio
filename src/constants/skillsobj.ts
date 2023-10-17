@@ -142,7 +142,7 @@ export const skillsObjDB = [
 	},
 	{
 		skillName: "Cloudinary",
-		skillVal: 90,
+		skillVal: 95,
 		icon: BsFillCloudFog2Fill,
 		class: "#007FF4",
 	},
