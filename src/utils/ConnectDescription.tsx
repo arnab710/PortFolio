@@ -27,7 +27,30 @@ const ConnectDescription: React.FC = () => {
 				<p className="mt-3 text-center text-xs font-semibold min-[478px]:text-base">
 					<span className="text-sm text-blue-400 min-[478px]:text-lg">🌐 Connect</span> : Engage, Interact, and Build Your Network
 				</p>
-				<p className="mt-5 text-sm">
+				<span className="m-auto mt-10 flex max-w-[90%] justify-between text-[0.8rem] font-bold min-[401px]:text-[1rem] min-[514px]:text-xl sm:max-w-[530px]">
+					<a href="https://connect-ad710.netlify.app" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
+						See Live
+					</a>
+					<a href="https://github.com/arnab710/Connect" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
+						Backend
+					</a>
+					<a href="https://github.com/arnab710/Connect_Frontend" target="_blank" rel="noopener noreferrer" className="relative animate-pulse text-red-500">
+						Frontend
+					</a>
+				</span>
+				<div className="mt-6 text-start text-xs">
+					<p>
+						* Test Account Email : <span className="text-blue-400">arnabdey710@gmail.com</span>
+					</p>
+					<p>
+						* Test Account Password : <span className="text-blue-400">12345678</span>
+					</p>
+					<p className="mt-3 sm:max-w-[80%]">
+						<span className="text-red-400">****</span>(This website uses cookies primarily for authentication. To enjoy a seamless experience, please make sure cookies are enabled in your browser.
+						Without cookies, some functionalities may not work as intended)
+					</p>
+				</div>
+				<p className="mt-12 text-sm">
 					Unleash the power of social connectivity with Connect, your one-stop platform to share life in pixels and sound. This isn&apos;t just a place to post photos; it&apos;s a full-fledged digital
 					universe to narrate your story through pictures, videos, and even audio clips!
 				</p>
@@ -113,29 +136,6 @@ const ConnectDescription: React.FC = () => {
 			<p className="mt-8 text-center text-sm font-medium">
 				<span className="text-blue-400">Dive into Connect </span>, the social media platform where genuine human connections are just a click away. Beatzz—where audio dreams come to life.
 			</p>
-			<span className="m-auto mt-10 flex max-w-[90%] justify-between text-[0.8rem] font-bold min-[401px]:text-[1rem] min-[514px]:text-xl sm:max-w-[530px]">
-				<a href="https://connect-ad710.netlify.app" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
-					See Live
-				</a>
-				<a href="https://github.com/arnab710/Connect" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
-					Backend
-				</a>
-				<a href="https://github.com/arnab710/Connect_Frontend" target="_blank" rel="noopener noreferrer" className="relative animate-pulse text-red-500">
-					Frontend
-				</a>
-			</span>
-			<div className="mt-6 text-start text-xs">
-				<p>
-					* Test Account Email : <span className="text-blue-400">arnabdey710@gmail.com</span>
-				</p>
-				<p>
-					* Test Account Password : <span className="text-blue-400">12345678</span>
-				</p>
-				<p className="mt-3 sm:max-w-[80%]">
-					<span className="text-red-400">****</span>(This website uses cookies primarily for authentication. To enjoy a seamless experience, please make sure cookies are enabled in your browser.
-					Without cookies, some functionalities may not work as intended)
-				</p>
-			</div>
 		</section>
 	);
 };

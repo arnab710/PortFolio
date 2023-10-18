@@ -27,7 +27,30 @@ const BeatzzDescription = () => {
 				<p className="mt-3 text-center text-xs font-semibold min-[478px]:text-base">
 					<span className="text-sm text-blue-400 min-[478px]:text-lg">🎧 Beatzz</span>: The Ultimate E-Commerce Experience for Headphone Enthusiasts
 				</p>
-				<p className="mt-5 text-sm">
+				<span className="m-auto mt-10 flex max-w-[90%] justify-between text-[0.8rem] font-bold min-[401px]:text-[1rem] min-[514px]:text-xl sm:max-w-[530px]">
+					<a href="https://beatzzz.netlify.app" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
+						See Live
+					</a>
+					<a href="https://github.com/arnab710/Beatzz-Backend" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
+						Backend
+					</a>
+					<a href="https://github.com/arnab710/Beatzz-Frontend" target="_blank" rel="noopener noreferrer" className="relative animate-pulse text-red-500">
+						Frontend
+					</a>
+				</span>
+				<div className="mt-6 text-start text-xs">
+					<p>
+						* Test Account Email : <span className="text-blue-400">arnab@gmail.com</span>
+					</p>
+					<p>
+						* Test Account Password : <span className="text-blue-400">12345678</span>
+					</p>
+					<p className="mt-3 sm:max-w-[80%]">
+						<span className="text-red-400">****</span>(This website uses cookies primarily for authentication. To enjoy a seamless experience, please make sure cookies are enabled in your browser.
+						Without cookies, some functionalities may not work as intended)
+					</p>
+				</div>
+				<p className="mt-12 text-sm">
 					Step into a world of unparalleled audio bliss with Beatzz, a premium e-commerce platform dedicated exclusively to headphones. Designed with a laser focus on user experience, Beatzz
 					isn&apos;t just another online shop—it&apos;s a journey through the finest aural experiences money can buy.
 				</p>
@@ -93,29 +116,6 @@ const BeatzzDescription = () => {
 			<p className="mt-8 text-center text-sm font-medium">
 				Embark on an unforgettable shopping journey with <span className="text-blue-400">Beatzz—where audio dreams come to life.</span>
 			</p>
-			<span className="m-auto mt-10 flex max-w-[90%] justify-between text-[0.8rem] font-bold min-[401px]:text-[1rem] min-[514px]:text-xl sm:max-w-[530px]">
-				<a href="https://beatzzz.netlify.app" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
-					See Live
-				</a>
-				<a href="https://github.com/arnab710/Beatzz-Backend" className="relative animate-pulse text-red-500 " target="_blank" rel="noopener noreferrer">
-					Backend
-				</a>
-				<a href="https://github.com/arnab710/Beatzz-Frontend" target="_blank" rel="noopener noreferrer" className="relative animate-pulse text-red-500">
-					Frontend
-				</a>
-			</span>
-			<div className="mt-6 text-start text-xs">
-				<p>
-					* Test Account Email : <span className="text-blue-400">arnab@gmail.com</span>
-				</p>
-				<p>
-					* Test Account Password : <span className="text-blue-400">12345678</span>
-				</p>
-				<p className="mt-3 sm:max-w-[80%]">
-					<span className="text-red-400">****</span>(This website uses cookies primarily for authentication. To enjoy a seamless experience, please make sure cookies are enabled in your browser.
-					Without cookies, some functionalities may not work as intended)
-				</p>
-			</div>
 		</section>
 	);
 };
