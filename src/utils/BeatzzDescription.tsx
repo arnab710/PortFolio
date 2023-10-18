@@ -21,7 +21,9 @@ const BeatzzDescription = () => {
 
 	return (
 		<section className="m-auto mt-20 overflow-hidden lg:max-w-[1024px]">
-			<h1 className="w-max text-3xl font-semibold text-blue-400 underline underline-offset-4">Beatzz</h1>
+			<a href="https://beatzzz.netlify.app" className="w-max text-3xl font-semibold text-blue-400 underline underline-offset-4" target="_blank" rel="noopener noreferrer">
+				Beatzz
+			</a>
 			<div ref={divRef1} style={{ marginTop: `50px` }} className={`opacity-0 ${isVisible1 && `animate-leftAnimation`}`}>
 				<Image src={Beatzz1} alt="Beatzz Website Img" style={{ width: `100%` }} />
 				<p className="mt-3 text-center text-xs font-semibold min-[478px]:text-base">

@@ -21,7 +21,9 @@ const ConnectDescription: React.FC = () => {
 
 	return (
 		<section className="m-auto mt-24 overflow-hidden lg:max-w-[1024px]">
-			<h1 className="w-max text-3xl font-semibold text-blue-400 underline underline-offset-4">Connect</h1>
+			<a href="https://connect-ad710.netlify.app" className="w-max text-3xl font-semibold text-blue-400 underline underline-offset-4" target="_blank" rel="noopener noreferrer">
+				Connect
+			</a>
 			<div ref={divRef1} style={{ marginTop: `50px` }} className={`opacity-0 ${isVisible1 && `animate-leftAnimation`}`}>
 				<Image src={Connect1} alt="Connect Website Img" style={{ width: `100%` }} />
 				<p className="mt-3 text-center text-xs font-semibold min-[478px]:text-base">
