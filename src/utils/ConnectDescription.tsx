@@ -47,10 +47,6 @@ const ConnectDescription: React.FC = () => {
 					<p>
 						* Test Account Password : <span className="text-blue-400">12345678</span>
 					</p>
-					<p className="mt-3 sm:max-w-[80%]">
-						<span className="text-red-400">****</span>(This website uses cookies primarily for authentication. To enjoy a seamless experience, please make sure cookies are enabled in your browser.
-						Without cookies, some functionalities may not work as intended)
-					</p>
 				</div>
 				<p className="mt-12 text-sm">
 					Unleash the power of social connectivity with Connect, your one-stop platform to share life in pixels and sound. This isn&apos;t just a place to post photos; it&apos;s a full-fledged digital

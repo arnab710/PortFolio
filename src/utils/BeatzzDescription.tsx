@@ -47,10 +47,6 @@ const BeatzzDescription = () => {
 					<p>
 						* Test Account Password : <span className="text-blue-400">12345678</span>
 					</p>
-					<p className="mt-3 sm:max-w-[80%]">
-						<span className="text-red-400">****</span>(This website uses cookies primarily for authentication. To enjoy a seamless experience, please make sure cookies are enabled in your browser.
-						Without cookies, some functionalities may not work as intended)
-					</p>
 				</div>
 				<p className="mt-12 text-sm">
 					Step into a world of unparalleled audio bliss with Beatzz, a premium e-commerce platform dedicated exclusively to headphones. Designed with a laser focus on user experience, Beatzz
